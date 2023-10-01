@@ -1,0 +1,69 @@
+.all-projects {
+    text-align: center;
+    border-bottom: 3px solid var(--primary-color);
+    padding: 2.8rem 0 .5rem;
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+}
+
+.field {
+    margin: 8rem 0;
+    color: black;
+}
+
+.field h2 {
+    text-transform: capitalize;
+    width: fit-content;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: .3rem;
+}
+
+.front-end-section {
+    margin-top: 3rem !important;
+}
+
+.front-box-1 {
+    background-image: url(../images/nursique.png);
+}
+
+.front-box-2 {
+    background-image: url(../images/React-Native.png);
+}
+
+.front-box-3 {
+    background-image: url(../images/the-blog.png);
+}
+
+.front-box-4 {
+    background-image: url(../images/finsweet.png);
+}
+
+.front-box-5 {
+    background-image: url(../images/wisdom.png);
+}
+
+.front-box-6 {
+    background-image: url(../images/markthink.png);
+}
+
+.front-box-7 {
+    background-image: url(../images/lookscout.png);
+}
+
+.front-box-8 {
+    background-image: url(../images/leon.png);
+}
+
+.front-box-9 {
+    background-image: url(../images/Trello.png);
+}
+
+.front-box-10 {
+    background-image: url(../images/drag-and-drop.png);
+}
+
+
+.back-box-1{
+    background-image: url(../images/node.jpg);
+}

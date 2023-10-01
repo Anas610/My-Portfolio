@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="container">
+            <div class="bar">
+                <a href="/" class="logo fa-brands">
+                    Portfolio
+                </a>
+                <i id="burger-menu" class="fa-solid fa-bars" onclick="toggle()"></i>
+                <ul class="menu">
+                    <li><a class="nav__link active" href="#home">home</a></li>
+                    <li><a class="nav__link" href="#services">services</a></li>
+                    <li><a class="nav__link" href="#projects">projects</a></li>
+                    <li><a class="nav__link" href="#about">about</a></li>
+                    <li><a class="nav__link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <main>
+        <!-- header -->
+        <header id="home" class="home section">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-about">
+                        <p class="hi">welcome, it's me</p>
+                        <h1 class="myName">anas hossam</h1>
+                        <p class="myJob">i'm a MERN-stack developer & react native developer</p>
+                        <p class="small-about">+2 Years of Experience in Creating Websites and Applications, <br> My Mission is to
+                            Design a Website that Inspire You and Your Audience.</p>
+                        <div class="btns">
+                            <a href="mailto:anas1062000@gmail.com" class="hire-btn btn">hire me <i
+                                    class="fa-solid fa-handshake"></i></a>
+                            <a href="./assets/resume/Anas-Hossam-CV.pdf" class="download-btn btn" download>download CV</a>
+                        </div>
+                    </div>
+                    <div class="the-img">
+                        <div class="my-img">
+                            <img src="assets/images/Me_auto_x2-removebg.png" alt="my image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- services -->
+        <section id="services" class="services section">
+            <div class="container">
+                <p class="section-title">services</p>
+                <div class="services-content">
+                    <p class="do">What I do !</p>
+                    <p class="doing">i build value through design</p>
+                    <div class="services-cards">
+                        <div class="card card1">
+                            <div class="hexagon hexagon1">
+                                <img src="./assets/images/hexagon-svgrepo-com.svg" alt="">
+                                <i class="fa-regular fa-lightbulb"></i>
+                            </div>
+                            <h3>Creative Designs</h3>
+                            <p>Elevate your brand's online presence with a web design that exudes creativity and innovation, where
+                                every pixel tells a story, and every interaction leaves a lasting impression.</p>
+                        </div>
+                        <div class="card card2">
+                            <div class="hexagon hexagon2">
+                                <img src="./assets/images/hexagon-svgrepo-com1.svg" alt="">
+                                <i class="services fa fa-code"></i>
+                            </div>
+                            <h3>Software Testing</h3>
+                            <p>Unleash the potential of your software with meticulous testing that ensures flawless performance,
+                                delivering an impeccable user experience that surpasses expectations.</p>
+                        </div>
+                        <div class="card card3">
+                            <div class="hexagon hexagon3">
+                                <img src="./assets/images/hexagon-svgrepo-com2.svg" alt="">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h3>Massive Databases</h3>
+                            <p>Witness the birth of a monumental data ecosystem as i craft your massive database, transforming raw
+                                data into a boundless resource that fuels your organization's growth and success.</p>
+                        </div>
+                        <div class="card card4">
+                            <div class="hexagon hexagon4">
+                                <img src="./assets/images/hexagon-svgrepo-com3.svg" alt="">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </div>
+                            <h3>Creating Websites</h3>
+                            <p>Experience the artistry of digital craftsmanship as i weave your vision into a stunning website,
+                                seamless functionality, and an immersive user experience that drives your online success.</p>
+                        </div>
+                        <div class="card card5">
+                            <div class="hexagon hexagon5">
+                                <img src="./assets/images/hexagon-svgrepo-com4.svg" alt="">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <h3>Mobile Applications</h3>
+                            <p>Step into the future of mobile innovation as i craft your visionary mobile application, seamlessly
+                                blending captivating design, cutting-edge technology, and unparalleled user experiences.</p>
+                        </div>
+                        <div class="card card6">
+                            <div class="hexagon hexagon6">
+                                <img src="./assets/images/hexagon-svgrepo-com5.svg" alt="">
+                                <i class="fa-brands fa-uikit"></i>
+                            </div>
+                            <h3>Landing Pages</h3>
+                            <p>Unleash your digital vision with a web page design that pushes boundaries and blending stunning
+                                visuals, Welcome to a world where imagination meets digital reality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end services -->
+
+        <!-- projects -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <p class="section-title">projects</p>
+                <p class="work">My Recent Work</p>
+                <div class="projects-boxes">
+                    <div class="box1 box">
+                        <div class="box-overlay">
+                            <h4>Nursique Website <span class="technology">React.js</span></h4>
+                            <div class="box-icons">
+                                <a href="#" title="overview" class="fa-sharp fa-regular fa-eye"></a>
+                                <a href="https://github.com/Anas610/ITI-React-Project" target="_blank" title="source code" class="fa-solid fa-code"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2 box">
+                        <div class="box-overlay">
+                            <h4>Nursique App <span class="technology">React Native</span></h4>
+                            <div class="box-icons">
+                                <a href="#" title="overview" class="fa-sharp fa-regular fa-eye"></a>
+                                <a href="https://github.com/Anas610/ITI-ReactNative-Project" target="_blank" title="source code" class="fa-solid fa-code"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box3 box">
+                        <div class="box-overlay">
+                            <h4>The Blog <span class="technology">Next.js/TS/Chakra UI</span></h4>
+                            <div class="box-icons">
+                                <a href="https://anas-blog-azure.vercel.app/" target="_blank" title="overview" class="fa-sharp fa-regular fa-eye"></a>
+                                <a href="https://github.com/Anas610/ANAS-Blog" target="_blank" title="source code" class="fa-solid fa-code"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./pages/all_projects.html" class="view">View All
+                    <div>
+                        <img src="assets/images/Arrow-right.png" alt="Arrow right">
+                    </div>
+                </a>
+                <div class="done-prjects">
+                    <div class="done">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p class="p1">projects</p>
+                        <p class="p2" data-goal="137">0</p>
+                    </div>
+                    <div class="done">
+                        <i class="fa-solid fa-users"></i>
+                        <p class="p1">Clients</p>
+                        <p class="p2" data-goal="105">0</p>
+                    </div>
+                    <div class="done">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="p1">Working Hours</p>
+                        <p class="p2" data-goal="460">0</p>
+                    </div>
+                    <div class="done">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <p class="p1">Cups of Coffee</p>
+                        <p class="p2" data-goal="298">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end projects -->
+
+        <!-- about -->
+        <section id="about" class="about section">
+            <div class="container">
+                <p class="section-title">about</p>
+                <p class="about-me">I'm an Egyptian <span class="flag"><img src="assets/images/egypt.png" alt="egypt flag"></span>
+                    web Developer Who loves Building digital
+                    Products and modern applications.
+                </p>
+                <p class="about-me2">I had a Bachelor's Degree in Computer Science in 2022, I've enough knowledge about Computer
+                    Science and software engineering basics, also I knew the web Developing best practises, I gained alot of information about Networks and how to manage
+                    Operating Systems.
+                    Now I'm Working as a MERN Developer as a freelancer and looking for a new role. <br>
+                    And here are some of the skills that i gained along with my developing journey.</p>
+                <div class="skills-rating">
+                    <div class="rate1 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">HTML5</p>
+                            <p class="skill__percentage">95%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="95%"></span>
+                        </div>
+                    </div>
+                    <div class="rate2 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">CSS3</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                    <div class="rate3 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">JavaScript</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                    <div class="rate4 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">TypeScript</p>
+                            <p class="skill__percentage">85%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="85%"></span>
+                        </div>
+                    </div>
+                    <div class="rate5 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">React</p>
+                            <p class="skill__percentage">95%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="95%"></span>
+                        </div>
+                    </div>
+                    <div class="rate6 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">React Native</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                    <div class="rate7 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">Next.js</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                    <div class="rate8 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">Node.js</p>
+                            <p class="skill__percentage">85%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="95%"></span>
+                        </div>
+                    </div>
+                    <div class="rate9 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">Bootstrap</p>
+                            <p class="skill__percentage">95%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="85%"></span>
+                        </div>
+                    </div>
+                    <div class="rate10 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">SCSS</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                    <div class="rate11 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">Tailwind</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                    <div class="rate12 rate">
+                        <div class="d-flex">
+                            <p class="skill__title">Express.js</p>
+                            <p class="skill__percentage">90%</p>
+                        </div>
+                        <div class="skill__range">
+                            <span data-width="90%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+
+        <!-- contact -->
+        <section id="contact" class="contact section">
+            <div class="contact-content">
+                <p class="p3">I will be so Glad to Serve You,</p>
+                <p class="p4"> Stay in touch with me</p>
+                <div class="logos">
+                    <div class="logo">
+                        <a href="mailto:anas1062000@gmail.com" title="g-mail" class="fa-solid fa-envelope">
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://www.linkedin.com/in/anas-hossam-704276216/" target="_blank" title="linkedin"
+                            class="fa-brands fa-linkedin">
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://github.com/Anas610" target="_blank" title="github" class="fa-brands fa-github">
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="https://www.facebook.com/Anas11hossam/" target="_blank" title="facebook"
+                            class="fa-brands fa-facebook">
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="#" title="whatsapp" class="fa-brands fa-whatsapp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end contact -->
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>© Copyright 2023 All rights reserved. <br> Made with ♥ by Anas.</p>
+    </footer>
+    <!-- end footer -->
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
