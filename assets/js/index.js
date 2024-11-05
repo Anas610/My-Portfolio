@@ -55,16 +55,8 @@ function startCount(element) {
         if (element.textContent == goal) {
             clearInterval(count)
         }
-    }, 2000 / goal)
+    }, 5000 / goal)
 }
-
-
-// function scrollToElement(elementId) {
-//     let element = document.getElementById(elementId);
-//     element.scrollIntoView({ behavior: 'smooth', block: "start" });
-// }
-
-
 
 var menu = document.querySelector('.menu')
 var isOpen = false
