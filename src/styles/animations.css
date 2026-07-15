@@ -1,0 +1,62 @@
+@keyframes blobMove {
+  to {
+    background-position: center -30px;
+  }
+}
+
+@keyframes blobMoveSm {
+  to {
+    background-position: center -15px;
+  }
+}
+
+@keyframes blobMoveMd {
+  to {
+    background-position: center -20px;
+  }
+}
+
+.hero-blob {
+  animation: blobMove 1s linear infinite alternate;
+}
+
+@media (max-width: 575px) {
+  .hero-blob {
+    animation-name: blobMoveSm;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero-blob {
+    animation-name: blobMoveMd;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-blob {
+    animation-name: blobMoveMd;
+  }
+}
+
+.project-overlay {
+  transform: translateY(20rem);
+  opacity: 0.3;
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+  transform: translateY(16.3rem);
+}
+
+.service-card:hover {
+  transform: scaleY(1.15);
+}
+
+.service-card:hover p {
+  opacity: 1;
+}
+
+.skill-bar-fill {
+  transition: width 1s linear;
+}
