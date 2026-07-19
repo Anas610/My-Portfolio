@@ -15,7 +15,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
   return (
     <div
-      className="project-card relative mb-16 mx-4 h-80 w-80 overflow-hidden rounded-lg shadow-[0.3125rem_0.75rem_1.25rem_var(--color-project-shadow)] transition-all duration-[800ms] hover:scale-110 bg-cover bg-center bg-no-repeat"
+      className="project-card relative mb-16 mx-4 h-80 min-w-80 max-w-[80%] flex-1 overflow-hidden rounded-lg shadow-[0.3125rem_0.75rem_1.25rem_var(--color-project-shadow)] transition-all duration-800 hover:scale-110 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${project.image})`,
         backgroundSize: '100% 100%',
@@ -30,7 +30,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="project-overlay flex w-full items-center justify-between bg-[rgba(44,44,44,0.8)] px-4 py-[1.4rem] font-semibold text-white">
         <h4 className="text-[1.05rem] font-semibold">
           {project.name}{' '}
-          <span className="text-[0.7rem] text-[var(--primary-color)]">
+          <span className="text-[0.7rem] text-(--primary-color)">
             {project.technology}
           </span>
         </h4>
@@ -41,7 +41,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               title="overview"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white transition-transform duration-300 hover:scale-125 hover:text-[var(--primary-color)]"
+              className="text-white transition-transform duration-300 hover:scale-125 hover:text-(--primary-color)"
             >
               <FontAwesomeIcon icon={eyeIcon} />
             </a>
@@ -52,7 +52,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               title="source code"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white transition-transform duration-300 hover:scale-125 hover:text-[var(--primary-color)]"
+              className="text-white transition-transform duration-300 hover:scale-125 hover:text-(--primary-color)"
             >
               <FontAwesomeIcon icon={codeIcon} />
             </a>

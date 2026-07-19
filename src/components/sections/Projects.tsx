@@ -15,19 +15,19 @@ export const Projects = () => {
       <div className="mx-auto max-sm:w-[95%] sm:w-[90%]">
         <p className="section-title">projects</p>
         <div className='flex justify-between items-start'>
-          <p className="w-fit border-b-2 border-[var(--primary-color)] pb-[3px] text-[1.2rem] font-medium">
+          <p className="w-fit border-b-2 border-(--primary-color) pb-[3px] text-[1.2rem] font-medium">
             My Recent Work
           </p>
           <Link
             to="/projects"
-            className="flex w-22 cursor-pointer items-center justify-between font-semibold leading-none text-[var(--color-text)] transition-transform duration-300 hover:scale-110 hover:text-[var(--primary-color)]"
+            className="flex w-22 cursor-pointer items-center justify-between font-semibold leading-none text-(--color-text) transition-transform duration-300 hover:scale-110 hover:text-(--primary-color)"
           >
             View All
-            {arrowIcon && <FontAwesomeIcon icon={arrowIcon} className='hover:text-[var(--primary-color)]' />}
+            {arrowIcon && <FontAwesomeIcon icon={arrowIcon} className='hover:text-(--primary-color)' />}
           </Link>
         </div>
 
-        <div className="mt-[3.125rem] flex flex-wrap justify-between max-[1242px]:justify-around">
+        <div className="mt-12.5 flex flex-wrap justify-between max-[1242px]:justify-around">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

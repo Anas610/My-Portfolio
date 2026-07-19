@@ -12,7 +12,7 @@ export const ThemeToggle = () => {
       type="button"
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
-      className="ml-4 cursor-pointer text-white transition-colors duration-300 hover:text-[var(--primary-color)]"
+      className="ml-4 cursor-pointer text-white transition-colors duration-300 hover:text-(--primary-color)"
     >
       <FontAwesomeIcon icon={theme === 'light' ? moonIcon! : sunIcon!} />
     </button>

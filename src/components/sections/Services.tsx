@@ -11,7 +11,7 @@ export const Services = () => {
           <p className="my-4 text-[1.3rem] font-medium capitalize tracking-[0.5rem]">
             i build value through design
           </p>
-          <div className="mt-[7.5rem] flex flex-wrap justify-between max-sm:justify-center">
+          <div className="mt-30 flex flex-wrap justify-between max-sm:justify-center">
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
             ))}

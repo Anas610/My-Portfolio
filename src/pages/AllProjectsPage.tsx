@@ -19,12 +19,12 @@ export const AllProjectsPage = () => {
             {categories.map((category, index) => (
               <div
                 key={category}
-                className={`my-32 text-[var(--color-text)] ${index === 0 ? 'mt-12' : ''}`}
+                className={`my-32 text-(--color-text) ${index === 0 ? 'mt-12' : ''}`}
               >
-                <h2 className="w-fit border-b-2 border-[var(--primary-color)] pb-[0.3rem] capitalize">
+                <h2 className="w-fit border-b-2 border-(--primary-color) pb-[0.3rem] capitalize">
                   {categoryLabels[category]}
                 </h2>
-                <div className="mt-[3.125rem] flex flex-wrap justify-between max-[1242px]:justify-around">
+                <div className="mt-12.5 flex flex-wrap justify-between max-[1242px]:justify-around">
                   {getProjectsByCategory(category).map((project) => (
                     <ProjectCard key={project.id} project={project} />
                   ))}

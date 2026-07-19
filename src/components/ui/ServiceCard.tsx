@@ -11,7 +11,7 @@ export const ServiceCard = ({ service }: ServiceCardProps) => {
 
   return (
     <div
-      className="service-card mb-24 mx-4 w-[20rem] px-8 pb-4 text-center shadow-[0px_0.3125rem_2.5rem_0.9375rem_var(--color-card-shadow)] transition-all duration-[800ms]"
+      className="service-card mb-24 mx-4 min-w-[16rem] max-w-[80%] flex-1 px-8 pb-4 text-center shadow-[0px_0.3125rem_2.5rem_0.9375rem_var(--color-card-shadow)] transition-all duration-800"
       style={{ borderBottom: `3px solid ${service.accentColor}` }}
     >
       <div className="relative mx-auto -translate-y-10 h-28 w-28 overflow-hidden text-white">
@@ -23,7 +23,7 @@ export const ServiceCard = ({ service }: ServiceCardProps) => {
           />
         )}
       </div>
-      <h3 className="-translate-y-4 mb-[0.9375rem] mt-[0.3125rem] font-semibold">
+      <h3 className="-translate-y-4 mb-3.75 mt-1.25 font-semibold">
         {service.title}
       </h3>
       <p className="-translate-y-4 text-[0.8rem] leading-normal opacity-30">

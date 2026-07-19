@@ -20,14 +20,14 @@ export const SocialLinks = ({ links, className = '' }: SocialLinksProps) => {
         return (
           <div
             key={link.id}
-            className="flex h-[2.8rem] w-[2.8rem] cursor-pointer items-center justify-center rounded-full border-2 border-[var(--primary-color)] opacity-30 transition-opacity duration-200 hover:opacity-100"
+            className="flex h-[2.8rem] w-[2.8rem] cursor-pointer items-center justify-center rounded-full border-2 border-(--primary-color) opacity-30 transition-opacity duration-200 hover:opacity-100"
           >
             <a
               href={link.href}
               title={link.label}
               target={link.external ? '_blank' : undefined}
               rel={link.external ? 'noopener noreferrer' : undefined}
-              className="text-[var(--primary-color)]"
+              className="text-(--primary-color)"
             >
               <FontAwesomeIcon icon={icon} />
             </a>

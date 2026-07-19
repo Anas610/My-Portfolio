@@ -54,7 +54,7 @@ export const ContactForm = () => {
           name="name"
           type="text"
           required
-          className="w-full text-sm rounded-lg border border-[var(--color-surface)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] outline-none focus:border-[var(--primary-color)]"
+          className="w-full text-sm rounded-lg border border-(--color-surface) bg-(--color-bg) px-4 py-3 text-(--color-text) outline-none focus:border-(--primary-color)"
         />
       </div>
       <div>
@@ -66,7 +66,7 @@ export const ContactForm = () => {
           name="email"
           type="email"
           required
-          className="w-full text-sm rounded-lg border border-[var(--color-surface)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] outline-none focus:border-[var(--primary-color)]"
+          className="w-full text-sm rounded-lg border border-(--color-surface) bg-(--color-bg) px-4 py-3 text-(--color-text) outline-none focus:border-(--primary-color)"
         />
       </div>
       <div>
@@ -78,13 +78,13 @@ export const ContactForm = () => {
           name="message"
           required
           rows={5}
-          className="w-full text-sm resize-none rounded-lg border border-[var(--color-surface)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] outline-none focus:border-[var(--primary-color)]"
+          className="w-full text-sm resize-none rounded-lg border border-(--color-surface) bg-(--color-bg) px-4 py-3 text-(--color-text) outline-none focus:border-(--primary-color)"
         />
       </div>
       <button
         type="submit"
         disabled={status === 'loading'}
-        className="w-full capitalize text-[1.1rem] font-semibold rounded-[2rem] border-2 border-[var(--primary-color)] bg-[var(--primary-color)] py-1 font-semibold text-white transition-all duration-300 hover:bg-transparent hover:text-[var(--primary-color)] disabled:opacity-50 cursor-pointer"
+        className="w-full capitalize text-[1.1rem] rounded-4xl border-2 border-(--primary-color) bg-(--primary-color) py-1 font-semibold text-white transition-all duration-300 hover:bg-transparent hover:text-(--primary-color) disabled:opacity-50 cursor-pointer"
       >
         {status === 'loading' ? 'Sending...' : 'Send Message'}
       </button>

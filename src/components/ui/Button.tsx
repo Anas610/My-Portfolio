@@ -24,9 +24,9 @@ export const Button = ({
 
   const variants = {
     primary:
-      'bg-[var(--primary-color)] text-white hover:bg-transparent hover:text-[var(--primary-color)]',
+      'bg-[var(--primary-color)] text-white hover:bg-transparent hover:text-(--primary-color)',
     outline:
-      'bg-transparent text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white',
+      'bg-transparent text-(--primary-color) hover:bg-[var(--primary-color)] hover:text-white',
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;
