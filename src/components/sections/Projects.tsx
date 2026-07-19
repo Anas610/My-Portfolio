@@ -14,7 +14,7 @@ export const Projects = () => {
     <section id="projects" className="section pt-12 md:pt-16">
       <div className="mx-auto max-sm:w-[95%] sm:w-[90%]">
         <p className="section-title">projects</p>
-        <div className='flex justify-between items-start'>
+        <div className='flex justify-between items-center'>
           <p className="w-fit border-b-2 border-(--primary-color) pb-[3px] text-[1.2rem] font-medium">
             My Recent Work
           </p>
@@ -27,7 +27,7 @@ export const Projects = () => {
           </Link>
         </div>
 
-        <div className="mt-12.5 flex flex-wrap justify-between max-[1242px]:justify-around">
+        <div className="mt-12.5 flex flex-wrap lg:gap-10 justify-between max-[1242px]:justify-around">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}

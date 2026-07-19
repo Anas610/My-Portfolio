@@ -11,7 +11,7 @@ export const ServiceCard = ({ service }: ServiceCardProps) => {
 
   return (
     <div
-      className="service-card mb-24 mx-4 min-w-[16rem] max-w-[80%] flex-1 px-8 pb-4 text-center shadow-[0px_0.3125rem_2.5rem_0.9375rem_var(--color-card-shadow)] transition-all duration-800"
+      className="service-card mb-24 mx-4 min-w-[16rem] lg:min-w-[20rem] max-w-[80%] flex-1 px-8 pb-4 text-center shadow-[0px_0.3125rem_2.5rem_0.9375rem_var(--color-card-shadow)] transition-all duration-800"
       style={{ borderBottom: `3px solid ${service.accentColor}` }}
     >
       <div className="relative mx-auto -translate-y-10 h-28 w-28 overflow-hidden text-white">
